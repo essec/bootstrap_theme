@@ -2,3 +2,4 @@ My custom bootstrap theme inspired by https://themes.getbootstrap.com/ other web
 
 ## Installation
     $ npm install
+    $ npm run scss
