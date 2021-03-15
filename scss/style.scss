@@ -2,24 +2,21 @@ $success: hsl(153, 53%, 53%);
 $danger: hsl(348, 86%, 61%);
 $info: hsl(229, 53%, 53%);
 
-$font-family-sans-serif: "Inter",
-sans-serif;
-
+$font-family-sans-serif: "Inter", sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-    transition: all .35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 .btn-link {
     text-decoration: none;
 }
 
-
 .card {
     margin-bottom: 1rem;
-    box-shadow: 0 0.125rem 0.8rem rgba(0, 0, 0, 0.15)
+    box-shadow: 0 0.125rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 
 .row {
@@ -35,26 +32,28 @@ main {
 }
 
 .form-group {
-    >label {
+    > label {
         bottom: 34px;
         left: 15px;
         position: relative;
-        background-color: white;
+        background-color: transparent;
         padding: 0px 3px 0px 3px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         transition: 0.2s;
         pointer-events: none;
     }
 }
 
 .form-control {
-    >label {
+    background-color: #f3f8ff;
+
+    > label {
         bottom: 34px;
         left: 15px;
         position: relative;
-        background-color: white;
+        background-color: transparent;
         padding: 0px 3px 0px 3px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         transition: 0.2s;
         pointer-events: none;
     }
@@ -62,6 +61,7 @@ main {
     &:focus {
         ~ {
             label {
+                background-color: white;
                 bottom: 55px;
                 font-size: 0.9rem;
             }
@@ -89,7 +89,7 @@ footer {
     &.footer {
         background: #fff;
         border-top: 1px solid #dee6ed;
-        padding: 1rem .75rem;
+        padding: 1rem 0.75rem;
         direction: ltr;
         max-height: 50px;
     }
@@ -117,12 +117,13 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 100;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-    transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out, margin-right 0.35s ease-in-out,
+        right 0.35s ease-in-out;
 
     &.collapsed {
         margin-left: -260px;
-        transition: all .35s ease-in-out;
+        transition: all 0.35s ease-in-out;
     }
 
     .nav-link {
@@ -154,13 +155,13 @@ footer {
     position: relative;
     top: 0;
     height: calc(100vh - 48px);
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .sidebar-heading {
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
