@@ -1,3 +1,4 @@
+$primary: #6658ea;
 $success: hsl(153, 53%, 53%);
 $danger: hsl(348, 86%, 61%);
 $info: hsl(229, 53%, 53%);
@@ -8,6 +9,13 @@ $font-family-sans-serif: "Inter", sans-serif;
 
 body {
     transition: all 0.35s ease-in-out;
+}
+
+.btn {
+    &:hover {
+        box-shadow: none !important;
+        transition: box-shadow 0.35s ease-in ;
+    }
 }
 
 .btn-link {
@@ -32,49 +40,10 @@ main {
 }
 
 .form-group {
-    > label {
-        bottom: 34px;
-        left: 15px;
-        position: relative;
-        background-color: transparent;
-        padding: 0px 3px 0px 3px;
-        font-size: 0.9rem;
-        transition: 0.2s;
-        pointer-events: none;
-    }
-}
-
-.form-control {
-    background-color: #f3f8ff;
-
-    > label {
-        bottom: 34px;
-        left: 15px;
-        position: relative;
-        background-color: transparent;
-        padding: 0px 3px 0px 3px;
-        font-size: 0.9rem;
-        transition: 0.2s;
-        pointer-events: none;
-    }
-
-    &:focus {
-        ~ {
-            label {
-                background-color: white;
-                bottom: 55px;
-                font-size: 0.9rem;
-            }
-        }
-    }
-
-    &:valid {
-        ~ {
-            label {
-                bottom: 55px;
-                font-size: 0.9rem;
-            }
-        }
+    margin-bottom: 1rem;
+    label {
+        margin-bottom: 0.25rem;
+        font-weight: 700;
     }
 }
 
