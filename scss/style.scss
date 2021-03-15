@@ -14,7 +14,7 @@ body {
 .btn {
     &:hover {
         box-shadow: none !important;
-        transition: box-shadow 0.35s ease-in ;
+        transition: box-shadow 0.25s ease-in ;
     }
 }
 
@@ -40,7 +40,8 @@ main {
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
     label {
         margin-bottom: 0.25rem;
         font-weight: 700;

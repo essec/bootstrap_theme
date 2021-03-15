@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../node_modules/typeface-inter/inter.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="../node_modules/apexcharts/dist/apexcharts.css"></script>
   <script src="../node_modules/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
@@ -26,32 +25,43 @@
     <div class="row align-items-center justify-content-center py-10 py-md-12 mt-5">
       <div class="col-12 col-md-7 col-lg-5 text-center">
         <div class="row">
-          <h1 class="fw-bold">เข้าสู่ระบบ</h1>
-        </div>
-        <div class="row">
-          <span class="fs-7">คุณยังไม่มีบัญชีใช่ไหม? <a class="btn-link" href="./register.html">สมัครเลย</a></span>
+          <h1 class="fw-bold">สร้างบัญชีใหม่</h1>
+          <span class="fs-5">กรอกรายละเอียดของคุณ</span>
         </div>
         <div class="row text-start">
           <form>
-            <div class='form-group'>
-              <label>Email</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class='form-group'>
-              <div class="d-flex justify-content-between">
-                <label class="text-start">Password</label>
-                <a class="btn-link fs-7 text-end" href="#">ลืมรหัสผ่าน?</a>
+            <div class="row g-3 mt-3">
+              <div class="form-group col-md-6">
+                <label>ชื่อ</label>
+                <input type="text" class="form-control">
               </div>
-              <input type="password" class="form-control" required>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4" class="form-label">นามสกุล</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class='form-group'>
+                <label>Email</label>
+                <input type="text" class="form-control" required>
+              </div>
+              <div class='form-group'>
+                <label class="text-start">Password</label>
+                <input type="password" class="form-control" required>
+              </div>
+              <div class='form-group'>
+                <label class="text-start">ยืนยัน Password</label>
+                <input type="password" class="form-control" required>
+              </div>
             </div>
-            <a class="btn btn-lg btn-primary w-100 mt-3 shadow" href="#login">เข้าสู่ระบบ</a>
+            <a class="btn btn-lg btn-primary w-100 shadow" href="#login">สมัคร</a>
           </form>
         </div>
-        <p class="my-4">หรือเข้าสู่ระบบด้วย</p>
+        <div class="row">
+          <span class="fs-7">คุณมีบัญชีกับเราอยู่แล้ว? <a class="btn-link" href="./login.html">เข้าสู่ระบบเลย</a></span>
+        </div>
+        <p class="my-4">หรือสมัครด้วย</p>
         <div class="row">
           <div class="col">
-            <a class="btn btn-light btn-labeled w-100 shadow border"
-              href="#google_auth">
+            <a class="btn btn-lg btn-light btn-labeled w-100 shadow border" href="#google_auth">
               <span class="btn-label" aria-hidden="false">
                 <svg class="svg" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -74,11 +84,14 @@
         </div>
         <div class="row">
           <div class="col">
-            <a class="btn btn-labeled w-100 shadow border"
-              href="#fb_auth"
+            <a class="btn btn-lg btn-labeled w-100 shadow border" href="#fb_auth"
               style="background-color: #3b5998 ; color: white;">
               <span class="btn-label">
-                <i class="fab fa-facebook"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                  <path
+                    d="M18.3437 9.42977C18.3437 4.42774 14.3155 0.375 9.34375 0.375C4.37198 0.375 0.34375 4.42774 0.34375 9.42977C0.34375 13.9491 3.63492 17.6952 7.9375 18.375V12.0473H5.65121V9.42977H7.9375V7.4348C7.9375 5.16563 9.28024 3.9122 11.3368 3.9122C12.3217 3.9122 13.3517 4.08891 13.3517 4.08891V6.3161H12.2165C11.0987 6.3161 10.75 7.01419 10.75 7.73017V9.42977H13.246L12.8469 12.0473H10.75V18.375C15.0526 17.6952 18.3437 13.9491 18.3437 9.42977Z"
+                    fill="white" />
+                </svg>
               </span>
               Login with Facebook
             </a>
